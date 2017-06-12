@@ -1,0 +1,13 @@
+.Settings h3{
+  line-height:35px;
+}
+.Settings .jumbotron{
+  background:#fff;
+}
+.Settings .jumbotron .btn.btn-default{
+  border-color:#272479;
+  color:#272479;
+}
+.Settings table tr td:last-child, .Settings table tr th:last-child{
+  text-align: right;
+}

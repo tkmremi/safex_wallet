@@ -1,0 +1,24 @@
+.App .navbar{
+  background: #3C3C3C;
+  border-radius: 0px;
+  border:none;
+  margin-bottom:0;
+  height:80px;
+}
+.App .navbar-brand{
+  padding:5px;
+}
+.App .navbar-brand .img-responsive{
+  height:70px;
+}
+.App .navbar ul li a{
+  padding-top:30px;
+  padding-bottom:30px;
+}
+.App .navbar ul li a.activeLink, .App .navbar ul li:hover a{
+  background:#72729A;
+  color:#272479;
+}
+.App .navbar ul li a{
+  margin-right:1px;
+}

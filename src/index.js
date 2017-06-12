@@ -3,7 +3,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { isEnvProduction } from './constants';
 import routes from './routes';
+import '../public/vendor/bootstrap/css/bootstrap.min.css';
 import './index.css';
+import './css/App.css';
 
 // Disable console.log in production
 if (isEnvProduction) {

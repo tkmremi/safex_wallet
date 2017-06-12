@@ -1,0 +1,54 @@
+.History select{
+  font-size:18px;
+}
+.History .table{
+  background:#fff;
+}
+.History .table tr.incoming{
+  background: #DFF0D8;
+  color:#3c763d;
+}
+.History .table tr.incoming:hover{
+  background: #F9FFF2;
+}
+.History .table tr.incoming a{
+  color:#3c763d;
+  display:block;
+  text-decoration: none;
+}
+.History .table tr.outgoing{
+  background: #F2DEDE;
+  color:#a94442;
+}
+.History .table tr.outgoing:hover{
+  background:#FFF8F8;
+}
+.History .table tr.outgoing a{
+  color:#a94442;
+  display:block;
+  text-decoration: none;
+}
+.History .table tr.pending{
+  background: #D9EDF7;
+  color:#31708f;
+}
+.History .table tr.pending:hover{
+  background:#F3FFFF;
+}
+.History .table tr.pending a{
+  color:#31708f;
+  display:block;
+  text-decoration: none;
+}
+.HistoryDetail .jumbotron.incoming{
+  background: #DFF0D8;
+  color:#3c763d;
+}
+.HistoryDetail .jumbotron.outgoing{
+  background: #F2DEDE;
+  color:#a94442;
+}
+.btn.btn-default.btn-history-close{
+  border-color:#272479;
+  color:#272479;
+}

@@ -7,7 +7,6 @@ import { Link } from 'react-router';
 import { filenameWallet } from '../constants';
 import { store as store$ } from '../store';
 import { thisPath } from '../utils/fs';
-import '../App.css';
 
 class Home extends React.Component {
     constructor(props) {
@@ -28,7 +27,7 @@ class Home extends React.Component {
         const readWalletFile = fs.readFile(thisPath(filenameWallet), 'utf8');
 
         const onSuccess = undefined; // @TODO: parse logic
-        
+
         const onError = error => {
             this.setState({
                 errorWalletData: error.message,
@@ -36,9 +35,9 @@ class Home extends React.Component {
                 isLoading: false,
             });
         };
-        
+
         const onComplete = () => {
-            this.setState({ 
+            this.setState({
                 errorWalletData: false,
                 isLoading: false,
             });

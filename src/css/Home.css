@@ -1,0 +1,22 @@
+.Home .jumbotron{
+  background: #fff;
+}
+.Home input, .Home button{
+  border-color:#272479;
+  color:#272479;
+}
+.Home .table{
+  margin-top:10px;
+}
+.Home .table thead th{
+  padding: 8px;
+  padding-bottom:0;
+  vertical-align: top;
+}
+.Home .table td{
+  color:#272479;
+}
+.Home .btn.btn-default{
+  border-color:#272479;
+  color:#272479;
+}
