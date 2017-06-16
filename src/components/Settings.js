@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import fs, { dialog } from '../utils/fs';
-
+import '../css/Settings.css';
 export default class Settings extends React.Component {
     exportWallet() {
         // @TODO: content export
@@ -22,17 +22,46 @@ export default class Settings extends React.Component {
 
     render() {
         return (
-            <div>
-                <span>SETTINGS  placeholder</span>
-                <br />
-                <br />
-                <br />
-                <div>
-                    <a className="activeLink" onClick={this.exportWallet}>export wallet</a>
-                </div>
-                <br />
-                <div>
-                    <Link to="/settings/address" className="activeLink">new address</Link>
+            <div className="container-fluid Settings">
+                <h2>Settings</h2>
+                <div className="jumbotron">
+                    <div className="row">
+                        <div className="col-xs-12">
+                            <h3>Export Wallet</h3>
+                            <a className="btn btn-default" onClick={this.exportWallet}>Export</a>
+                        </div>
+                        <div className="col-xs-12">
+                            <h3>Addresses
+                                <Link to="/settings/address" className="btn btn-default pull-right">Add New Address</Link>
+                            </h3>
+                            <table className="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Public Key</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            1DKnTPHxP7kEajt1iE9SpHHdq87AyoCDuh
+                                        </td>
+                                        <td>
+                                            <span className="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            1DKnTPHxP7kEajt1iE9SpHHdq87AyoCDuh
+                                        </td>
+                                        <td>
+                                            <span className="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
